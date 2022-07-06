@@ -21,6 +21,7 @@ import ModeEditOutlineIcon from "@mui/icons-material/ModeEditOutline";
 import { MainListItems } from "./listItems";
 import { useState } from "react";
 import { ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
+import { ClassData } from "../Components/ClassData";
 
 const drawerWidth = 240;
 
@@ -206,15 +207,8 @@ function DashboardContent() {
           }}
         >
           <Toolbar />
-          <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-            <div
-              style={{
-                fontSize: "4rem",
-                fontWeight: "bold",
-              }}
-            >
-              Hello Sokle
-            </div>
+          <Container maxWidth="lg" sx={{ mt: 4, mb: 4, height: "82%" }}>
+            <ClassData />
           </Container>
         </Box>
       </Box>
